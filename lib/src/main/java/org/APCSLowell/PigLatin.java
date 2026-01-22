@@ -16,6 +16,6 @@ public class PigLatin {
             return sWord + "way";
         if(sWord.substring(0,2).equals("qu"))
             return sWord.substring(2,sWord.length()) + "quay";
-        return sWord.substring(findFirstVowel(sWord)-1) + sWord.substring(0,findFirstVowel(sWord)) + "ay";
+        return sWord.substring(findFirstVowel(sWord)) + sWord.substring(0,findFirstVowel(sWord)) + "ay";
     }
 }
